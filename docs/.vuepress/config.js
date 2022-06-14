@@ -11,7 +11,21 @@ module.exports = {
         tocLevel: (p) => { return tocLevel(p.relativePath); },
         frontPage: 'assets/frontpage.pdf',
     }],
-  ],  
+  ],
+  locales: {
+    // The key is the path for the locale to be nested under.
+    // As a special case, the default locale can use '/' as its path.
+    '/': {
+        lang: 'en-US', // this will be set as the lang attribute on <html>
+        title: 'The Qt 6 Book',
+        description: "A book about QML",
+    },
+    '/fa/': {
+        lang: 'fa-IR',
+        title: 'کتاب کیوت ۶',
+        description: 'کتابی درباره‌ی کیو ام ال'
+    }
+},  
   themeConfig: {
     displayAllHeaders: false,
     repo: 'qmlbook/qt6book',
@@ -25,6 +39,24 @@ module.exports = {
     nav: [
     ],
     sidebar: sidebarOrder(),
+    locales: {
+      // The key is the path for the locale to be nested under.
+      // As a special case, the default locale can use '/' as its path.
+      '/': {
+          selectText: 'Languages',
+          label: 'English',
+          editLinkText: 'Help us improve this page!',
+          lastUpdated: 'Last Updated',
+          sidebar: sidebarOrder(),
+      },
+      '/fa/': {
+          selectText: 'Languages',
+          label: 'فارسی',
+          lastUpdated: 'آخرین ویرایش',
+          editLinkText: 'به ما در بهبود این صفحه کمک کنید.',
+          sidebar: faSidebarOrder(),
+      }
+  },
   },
 }
 
@@ -455,4 +487,379 @@ function prefaceSidebar() {
       '/preface/authors',
     ]
   }
+}
+
+// Sidebar for persian 
+
+
+function faSidebarOrder() {
+  return [
+    faPrefaceSidebar(),
+    faCh01Sidebar(),
+    faCh02Sidebar(),
+    faCh03Sidebar(),
+    faCh04Sidebar(),
+    faCh05Sidebar(),
+    faCh06Sidebar(),
+    faCh07Sidebar(),
+    faCh08Sidebar(),
+    faCh09Sidebar(),
+    faCh10Sidebar(),
+    faCh11Sidebar(),
+    faCh12Sidebar(),
+    faCh13Sidebar(),
+    faCh14Sidebar(),
+    faCh15Sidebar(),
+    faCh16Sidebar(),
+    faCh17Sidebar(),
+    faCh18Sidebar(),
+    faCh19Sidebar(),
+    faCh20Sidebar(),
+  ];
+}
+
+function faCh20Sidebar() {
+return {
+  title: "Qt برای MCUها",
+  path: '/fa/ch20-qtformcu/qtformcu',
+  collapsable: false,
+  children: [
+    '/fa/ch20-qtformcu/qtformcu',
+    '/fa/ch20-qtformcu/setup',
+    '/fa/ch20-qtformcu/helloworld',
+    '/fa/ch20-qtformcu/cpp',
+    '/fa/ch20-qtformcu/models',
+    '/fa/ch20-qtformcu/summary',
+  ]
+}
+}
+
+function faCh19Sidebar() {
+return {
+  title: "Qt برای پایتون",
+  path: '/fa/ch19-python/qt-python',
+  collapsable: false,
+  children: [
+    '/fa/ch19-python/qt-python',
+    '/fa/ch19-python/introduction',
+    '/fa/ch19-python/installing',
+    '/fa/ch19-python/build-app',
+    '/fa/ch19-python/limitations',
+    '/fa/ch19-python/summary',
+  ]
+}
+}
+
+function faCh18Sidebar() {
+return {
+  title: "گسترش QML",
+  path: '/fa/ch18-extensions/extending-qml',
+  collapsable: false,
+  children: [
+    '/fa/ch18-extensions/extending-qml',
+    '/fa/ch18-extensions/qml-runtime',
+    '/fa/ch18-extensions/plugin-content',
+    '/fa/ch18-extensions/create-plugin',
+    '/fa/ch18-extensions/fileio-demo',
+    '/fa/ch18-extensions/using-fileio',
+    '/fa/ch18-extensions/summary',
+  ]
+}
+}
+
+function faCh17Sidebar() {
+return {
+  title: "Qt C++",
+  path: '/fa/ch17-qtcpp/qtcpp',
+  collapsable: false,
+  children: [
+    '/fa/ch17-qtcpp/qtcpp',
+    '/fa/ch17-qtcpp/boilerplate',
+    '/fa/ch17-qtcpp/qobject',
+    '/fa/ch17-qtcpp/build-system',
+    '/fa/ch17-qtcpp/common-classes',
+    '/fa/ch17-qtcpp/cpp-models',
+  ]
+}
+}
+
+function faCh16Sidebar() {
+return {
+  title: "Javascript",
+  path: '/fa/ch16-javascript/javascript',
+  collapsable: false,
+  children: [
+    '/fa/ch16-javascript/javascript',
+    '/fa/ch16-javascript/html-qml',
+    '/fa/ch16-javascript/js-language',
+    '/fa/ch16-javascript/js-objects',
+    '/fa/ch16-javascript/js-console',
+  ]
+}
+}
+
+function faCh15Sidebar() {
+return {
+  title: "QML پویا",
+  path: '/fa/ch15-dynamicqml/dynamic-qml',
+  collapsable: false,
+  children: [
+    '/fa/ch15-dynamicqml/dynamic-qml',
+    '/fa/ch15-dynamicqml/loading-components',
+    '/fa/ch15-dynamicqml/dynamic-objects',
+    '/fa/ch15-dynamicqml/tracking-objects',
+    '/fa/ch15-dynamicqml/summary',
+  ]
+}
+}
+
+function faCh14Sidebar() {
+return {
+  title: "ذخیره سازی",
+  path: '/fa/ch14-storage/storage',
+  collapsable: false,
+  children: [
+    '/fa/ch14-storage/storage',
+    '/fa/ch14-storage/settings',
+    '/fa/ch14-storage/local-storage',
+  ]
+}
+}
+
+function faCh13Sidebar() {
+return {
+  title: "شبکه",
+  path: '/fa/ch13-networking/networking',
+  collapsable: false,
+  children: [
+    '/fa/ch13-networking/networking',
+    '/fa/ch13-networking/serve-qml',
+    '/fa/ch13-networking/templates',
+    '/fa/ch13-networking/http-requests',
+    '/fa/ch13-networking/local-files',
+    '/fa/ch13-networking/rest-api',
+    '/fa/ch13-networking/authentication',
+    '/fa/ch13-networking/web-sockets',
+    '/fa/ch13-networking/summary',
+  ]
+}
+}
+
+function faCh12Sidebar() {
+return {
+  title: "Qt Quick 3D",
+  path: '/fa/ch12-qtquick3d/intro',
+  collapsable: false,
+  children: [
+    '/fa/ch12-qtquick3d/intro',
+    '/fa/ch12-qtquick3d/basics',
+    '/fa/ch12-qtquick3d/assets',
+    '/fa/ch12-qtquick3d/materials-and-light',
+    '/fa/ch12-qtquick3d/animations',
+    '/fa/ch12-qtquick3d/mixing-2d-and-3d',
+    '/fa/ch12-qtquick3d/summary',
+  ]
+}
+}
+
+function faCh11Sidebar() {
+return {
+  title: "چند رسانه ای",
+  path: '/fa/ch11-multimedia/multimedia',
+  collapsable: false,
+  children: [
+    '/fa/ch11-multimedia/multimedia',
+    '/fa/ch11-multimedia/playing-media',
+    '/fa/ch11-multimedia/sound-effects',
+    '/fa/ch11-multimedia/video-streams',
+    '/fa/ch11-multimedia/capturing-images',
+    '/fa/ch11-multimedia/summary',
+  ]
+}
+}
+
+function faCh10Sidebar() {
+return {
+  title: "جلوه ها",
+  path: '/fa/ch10-effects/effects',
+  collapsable: false,
+  children: [
+    '/fa/ch10-effects/effects',
+    '/fa/ch10-effects/particles',
+    '/fa/ch10-effects/simple-simulation',
+    '/fa/ch10-effects/particle-parameters',
+    '/fa/ch10-effects/directed-particles',
+    '/fa/ch10-effects/affecting-particles',
+    '/fa/ch10-effects/particle-groups',
+    '/fa/ch10-effects/particle-painters',
+    '/fa/ch10-effects/opengl-shaders',
+    '/fa/ch10-effects/shader-elements',
+    '/fa/ch10-effects/fragment-shaders',
+    '/fa/ch10-effects/wave-effect',
+    '/fa/ch10-effects/vertex-shader',
+    '/fa/ch10-effects/curtain-effect',
+    '/fa/ch10-effects/summary',
+  ]
+}
+}
+
+function faCh09Sidebar() {
+return {
+  title: "شکل ها",
+  path: '/fa/ch09-shapes/shapes',
+  collapsable: false,
+  children: [
+    '/fa/ch09-shapes/shapes',
+    '/fa/ch09-shapes/basics',
+    '/fa/ch09-shapes/paths',
+    '/fa/ch09-shapes/gradients',
+    '/fa/ch09-shapes/animations',
+    '/fa/ch09-shapes/summary',
+  ]
+}
+}
+
+function faCh08Sidebar() {
+return {
+  title: "بوم",
+  path: '/fa/ch08-canvas/canvas-element',
+  collapsable: false,
+  children: [
+    '/fa/ch08-canvas/canvas-element',
+    '/fa/ch08-canvas/convenience-api',
+    '/fa/ch08-canvas/gradients',
+    '/fa/ch08-canvas/shadows',
+    '/fa/ch08-canvas/images',
+    '/fa/ch08-canvas/transformation',
+    '/fa/ch08-canvas/composition-modes',
+    '/fa/ch08-canvas/pixel-buffer',
+    '/fa/ch08-canvas/canvas-paint',
+    '/fa/ch08-canvas/port-from-html',
+  ]
+}
+}
+
+function faCh07Sidebar() {
+return {
+  title: "Model View",
+  path: '/fa/ch07-modelview/model-view',
+  collapsable: false,
+  children: [
+    '/fa/ch07-modelview/model-view',
+    '/fa/ch07-modelview/concept',
+    '/fa/ch07-modelview/basic-models',
+    '/fa/ch07-modelview/dynamic-views',
+    '/fa/ch07-modelview/delegate',
+    '/fa/ch07-modelview/advanced',
+    '/fa/ch07-modelview/summary',
+  ]
+}
+}
+
+function faCh06Sidebar() {
+return {
+  title: "QtQuick Controls",
+  path: '/fa/ch06-controls/controls2',
+  collapsable: false,
+  children: [
+    '/fa/ch06-controls/controls2',
+    '/fa/ch06-controls/introduction',
+    '/fa/ch06-controls/image-viewer',
+    '/fa/ch06-controls/common-patterns',
+    '/fa/ch06-controls/imagine-style',
+    '/fa/ch06-controls/summary',
+  ]
+}
+}
+
+function faCh05Sidebar() {
+return {
+  title: "عناصر سیال",
+  path: '/fa/ch05-fluid/fluid-elements',
+  collapsable: false,
+  children: [
+    '/fa/ch05-fluid/fluid-elements',
+    '/fa/ch05-fluid/animations',
+    '/fa/ch05-fluid/states-transitions',
+    '/fa/ch05-fluid/advanced',
+  ]
+}
+}
+
+function faCh04Sidebar() {
+return {
+  title: "شروع سریع",
+  path: '/fa/ch04-qmlstart/quick-start',
+  collapsable: false,
+  children: [
+    '/fa/ch04-qmlstart/quick-start',
+    '/fa/ch04-qmlstart/qml-syntax',
+    '/fa/ch04-qmlstart/core-elements',
+    '/fa/ch04-qmlstart/components',
+    '/fa/ch04-qmlstart/transformations',
+    '/fa/ch04-qmlstart/positioning',
+    '/fa/ch04-qmlstart/layout',
+    '/fa/ch04-qmlstart/input',
+    '/fa/ch04-qmlstart/advanced',
+  ]
+}
+}
+
+function faCh03Sidebar() {
+return {
+  title: "محیط یکپارچه توسعه Qt Creator",
+  path: '/fa/ch03-qtcreator/qt-creator',
+  collapsable: false,
+  children: [
+    '/fa/ch03-qtcreator/qt-creator',
+    '/fa/ch03-qtcreator/user-interface',
+    '/fa/ch03-qtcreator/kit-registry',
+    '/fa/ch03-qtcreator/projects',
+    '/fa/ch03-qtcreator/editor',
+    '/fa/ch03-qtcreator/locator',
+    '/fa/ch03-qtcreator/debugging',
+    '/fa/ch03-qtcreator/shortcuts',
+  ]
+}
+}
+
+function faCh02Sidebar() {
+return {
+  title: "آغاز ماجرا",
+  path: '/fa/ch02-start/quick-start',
+  collapsable: false,
+  children: [
+    '/fa/ch02-start/quick-start',
+    '/fa/ch02-start/install',
+    '/fa/ch02-start/hello-world',
+    '/fa/ch02-start/app-types',
+    '/fa/ch02-start/summary',
+  ]
+}
+}
+
+function faCh01Sidebar() {
+return { 
+  title: "ملاقات با Qt",
+  path: '/fa/ch01-meetqt/meet-qt',
+  collapsable: false,
+  children: [
+    '/fa/ch01-meetqt/meet-qt',
+    '/fa/ch01-meetqt/blocks',
+    '/fa/ch01-meetqt/intro',
+  ]
+}
+}
+
+function faPrefaceSidebar() {
+return { 
+  title: "پیشگفتار",
+  path: '/fa/preface/preface',
+  collapsable: false,
+  children: [
+    '/fa/preface/preface',
+    '/fa/preface/acknowledgements',
+    '/fa/preface/authors',
+  ]
+}
 }
