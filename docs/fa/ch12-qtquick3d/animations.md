@@ -12,13 +12,13 @@ For both types of animations, the most common approach is to define the morphing
 
 The goal of this example is to make Suzanne, the Blender monkey head, wave with one of her ears.
 
-![image](./assets/monkey.gif)
+![image](../../ch12-qtquick3d/assets//monkey.gif)
 
 Skeletal animation is sometimes known as vertex skinning. Basically, a skeleton is put inside of a mesh and the vertexes of the mesh are bound to the skeleton. This way, when moving the skeleton, the mesh is deformed into various poses.
 
 As teaching Blender is beyond the scope of this book, the keywords you are looking for are posing and armatures. Armatures are what Blender calls the bones. There are plenty of video tutorials available explaining how to do this. The screenshot below shows the scene with Suzanne and the armatures in Blender. Notice that the ear armatures have been named, so that we can identify them from QML.
 
-![image](./assets/blender-monkey-with-bones.png)
+![image](../../ch12-qtquick3d/assets//blender-monkey-with-bones.png)
 
 Once the Blender scene is done, we export it as a COLLADA file and convert it to a QML and a mesh, just as in the _Working with Assets_ section. The resulting QML file is called ``Monkey_with_bones.qml``.
 
@@ -57,6 +57,6 @@ In order to be able to access the ``Joint``'s ``eulerRotation.y`` from outside o
 
 The resulting floppy ear can be enjoyed below:
 
-![image](./assets/monkey.gif)
+![image](../../ch12-qtquick3d/assets//monkey.gif)
 
 As you can see, it is convenient to import and use skeletons created in a design tool. This makes it convenient to animate complex 3D models from QML.

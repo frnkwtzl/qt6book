@@ -2,7 +2,7 @@
 
 Graphics is rendered using a _rendering pipeline_ split into stages. There are multiple APIs to control graphics rendering. Qt supports OpenGL, Metal, Vulcan, and Direct3D. Looking at a simplified OpenGL pipeline, we can spot a vertex and fragment shader. These concepts exist for all other rendering pipelines too.
 
-![image](./assets/openglpipeline.png)
+![image](../../ch10-effects/assets//openglpipeline.png)
 
 In the pipeline, the vertex shader receives vertex data, i.e. the location of the corners of each element that makes up the scene, and calculates a `gl_Position`. This means that the vertex shader can _move_ graphical elements. In the next stage, the vertexes are clipped, transformed and rasterized for pixel output. Then the pixels, also known as _fragments_,are passed through the fragment shader, which calculates the color of each pixel. The resulting color returned through the `gl_FragColor` variable. 
 

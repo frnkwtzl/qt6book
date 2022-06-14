@@ -42,5 +42,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The example results in a window such as the one shown below. To end the program, close the window.
 
-![](./assets/pyside6-hello-world.png)
+![](../../ch19-python/assets//pyside6-hello-world.png)
 

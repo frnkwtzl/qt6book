@@ -13,31 +13,31 @@ Please note the use of `Qt.lighter(color)` to produce a lighter border color bas
 
 The `Column` element arranges child items into a column by stacking them on top of each other. The `spacing` property can be used to distance each of the child elements from each other.
 
-![](./assets/column.png)
+![](../../ch04-qmlstart/assets//column.png)
 
 <<< @/docs/ch04-qmlstart/src/positioners/ColumnExample.qml#global
 
 The `Row` element places its child items next to each other, either from the left to the right, or from the right to the left, depending on the `layoutDirection` property. Again, `spacing` is used to separate child items.
 
-![](./assets/row.png)
+![](../../ch04-qmlstart/assets//row.png)
 
 <<< @/docs/ch04-qmlstart/src/positioners/RowExample.qml#global
 
 The `Grid` element arranges its children in a grid. By setting the `rows` and `columns` properties, the number of rows or columns can be constrained. By not setting either of them, the other is calculated from the number of child items. For instance, setting rows to 3 and adding 6 child items will result in 2 columns. The properties `flow` and `layoutDirection` are used to control the order in which the items are added to the grid, while `spacing` controls the amount of space separating the child items.
 
-![](./assets/grid.png)
+![](../../ch04-qmlstart/assets//grid.png)
 
 <<< @/docs/ch04-qmlstart/src/positioners/GridExample.qml#global
 
 The final positioner is `Flow`. It adds its child items in a flow. The direction of the flow is controlled using `flow` and `layoutDirection`. It can run sideways or from the top to the bottom. It can also run from left to right or in the opposite direction. As the items are added in the flow, they are wrapped to form new rows or columns as needed. In order for a flow to work, it must have a width or a height. This can be set either directly, or though anchor layouts.
 
-![](./assets/flow.png)
+![](../../ch04-qmlstart/assets//flow.png)
 
 <<< @/docs/ch04-qmlstart/src/positioners/FlowExample.qml#global
 
 An element often used with positioners is the `Repeater`. It works like a for-loop and iterates over a model. In the simplest case a model is just a value providing the number of loops.
 
-![](./assets/repeater.png)
+![](../../ch04-qmlstart/assets//repeater.png)
 
 <<< @/docs/ch04-qmlstart/src/positioners/RepeaterExample.qml#global
 

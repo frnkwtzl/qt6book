@@ -47,7 +47,7 @@ onPaint: {
 
 The result is a ported spiro graph graphics running using the QML canvas.
 
-![image](./assets/spirograph.png)
+![image](../../ch08-canvas/assets//spirograph.png)
 
 As you can see, with no changes to the actual logic, and relatively few changes to the code itself, a port from HTML5 to QML is possible.
 
@@ -55,7 +55,7 @@ As you can see, with no changes to the actual logic, and relatively few changes 
 
 Here is another more complicated port from the W3C organization. The original [pretty glowing lines](http://www.w3.org/TR/2dcontext/#examples) has some pretty nice aspects, which makes the porting more challenging.
 
-![image](./assets/html_glowlines.png)
+![image](../../ch08-canvas/assets//html_glowlines.png)
 
 ```html
 <!DOCTYPE HTML>
@@ -241,4 +241,4 @@ function blank(context) {
 
 The final result will look similar to this.
 
-![image](./assets/glowlines.png)
+![image](../../ch08-canvas/assets//glowlines.png)

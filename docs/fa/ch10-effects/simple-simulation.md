@@ -11,7 +11,7 @@ Let us have a look at a very simple simulation to get started. Qt Quick makes it
 
 The outcome of the example will look like this:
 
-![image](./assets/simpleparticles.png)
+![image](../../ch10-effects/assets//simpleparticles.png)
 
 We start with an 80x80 pixel dark rectangle as our root element and background. Therein we declare a `ParticleSystem`. This is always the first step as the system binds all other elements together. Typically the next element is the `Emitter`, which defines the emitting area based on it’s bounding box and basic parameters for them to be emitted particles. The emitter is bound to the system using the `system` property.
 
@@ -31,6 +31,6 @@ Changing these properties can influence the result in a drastical way
 
 Besides increasing the emit rate to 40 and the lifespan to 2 seconds the size now starts at 64 pixels and decreases 32 pixels at the end of a particle lifespan.
 
-![image](./assets/simpleparticles2.png)
+![image](../../ch10-effects/assets//simpleparticles2.png)
 
 Increasing the `endSize` even more would lead to a more or less white background. Please note also when the particles are only emitted in the area defined by the emitter the rendering is not constrained to it.

@@ -2,7 +2,7 @@
 
 In this example, we will create a small paint application using the `Canvas` element.
 
-![image](./assets/canvaspaint.png)
+![image](../../ch08-canvas/assets//canvaspaint.png)
 
 For this, we arrange four color squares on the top of our scene using a row positioner. A color square is a simple rectangle filled with a mouse area to detect clicks.
 

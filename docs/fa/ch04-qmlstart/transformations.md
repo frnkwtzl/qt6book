@@ -10,14 +10,14 @@ Before we show off the example I would like to introduce a little helper: the `C
 
 <<< @/docs/ch04-qmlstart/src/transformation/ClickableImage.qml#global
 
-![](./assets/objects.png)
+![](../../ch04-qmlstart/assets//objects.png)
 
 
 We use our clickable image to present three objects (box, circle, triangle). Each object performs a simple transformation when clicked. Clicking the background will reset the scene.
 
 <<< @/docs/ch04-qmlstart/src/transformation/TransformationExample.qml#no-tests
 
-![](./assets/objects_transformed.png)
+![](../../ch04-qmlstart/assets//objects_transformed.png)
 
 The circle increments the x-position on each click and the box will rotate on each click. The triangle will rotate and scale the image up on each click, to demonstrate a combined transformation. For the scaling and rotation operation we set `antialiasing: true` to enable anti-aliasing, which is switched off (same as the clipping property `clip`) for performance reasons.  In your own work, when you see some rasterized edges in your graphics, then you should probably switch smoothing on.
 
@@ -30,7 +30,7 @@ The background `MouseArea` covers the whole background and resets the object val
 ::: tip
 Elements which appear earlier in the code have a lower stacking order (called z-order). If you click long enough on `circle` you will see it moves below `box`. The z-order can also be manipulated by the `z` property of an Item.
 
-![](./assets/objects_overlap.png)
+![](../../ch04-qmlstart/assets//objects_overlap.png)
 
 This is because `box` appears later in the code. The same applies also to mouse areas. A mouse area later in the code will overlap (and thus grab the mouse events) of a mouse area earlier in the code.
 

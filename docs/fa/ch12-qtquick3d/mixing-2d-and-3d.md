@@ -20,7 +20,7 @@ To put 2D contents into a 3D scene, it needs to be placed on a 3D surface. The Q
 
 Another apporoach is to put the 2D Qt Quick elements directly into the scene. This is the approach used in the example below where we provide a name badge for Suzanne.
 
-![image](./assets/mix-2d-and-3d.png)
+![image](../../ch12-qtquick3d/assets//mix-2d-and-3d.png)
 
 What we do here is that we instantiate a ``Node`` that serves as an anchor point in the 3D scene. We then place a ``Rectangle`` and a ``Text`` element inside the ``Node``. These two are 2D Qt Quick elements. We can then control the 3D position, rotation, and scale through the corresponding properties of the ``Node`` element.
 

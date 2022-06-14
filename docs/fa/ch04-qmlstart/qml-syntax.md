@@ -8,7 +8,7 @@ In its simplest form, QtQuick lets you create a hierarchy of elements. Child ele
 QtQuick builds on QML. The QML language only knows of elements, properties, signals and bindings. QtQuick is a framework built on QML. Using default properties, the hierarchy of QtQuick elements can be constructed in an elegant way.
 :::
 
-![](./assets/scene.png)
+![](../../ch04-qmlstart/assets//scene.png)
 
 Let’s start with a simple example of a QML file to explain the different syntax.
 

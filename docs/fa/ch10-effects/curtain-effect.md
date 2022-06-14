@@ -2,7 +2,7 @@
 
 In the last example for custom shader effects, I would like to bring you the curtain effect. This effect was published first in May 2011 as part of [Qt labs for shader effects](http://labs.qt.nokia.com/2011/05/03/qml-shadereffectitem-on-qgraphicsview/).
 
-![image](./assets/curtain.png)
+![image](../../ch10-effects/assets//curtain.png)
 
 At that time I really loved these effects and the curtain effect was my favorite out of them. I just love how the curtain opens and hide the background object.
 
@@ -12,7 +12,7 @@ The curtain image is called `fabric.png`. The effect then uses a vertex shader t
 
 The diagram below shows how the shader works. The waves are computed through a sin curve with 7 periods (7\*PI=21.99…). The other part is the swinging. The `topWidht` of the curtain is animated when the curtain is opened or closed. The `bottomWidth` follows the `topWidth` using a `SpringAnimation`. This creates the effect of the bottom part of the curtain swinging freely. The calculated `swing` component is the strength of the swing based on the y-component of the vertexes.
 
-![image](./assets/curtain_diagram.png)
+![image](../../ch10-effects/assets//curtain_diagram.png)
 
 The curtain effect is implemented in the `CurtainEffect.qml` file where the fabric image act as the texture source. In the QML code, the `mesh` property is adjusted to make sure that the number of vertices is increased to give a smoother result.
 

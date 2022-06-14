@@ -8,7 +8,7 @@ The most commonly used properties attached from the view are `ListView.isCurrent
 
 <<< @/docs/ch07-modelview/src/delegates/basic.qml#global
 
-![image](./assets/automatic/delegates-basic.png)
+![image](../../ch07-modelview/assets//automatic/delegates-basic.png)
 
 If each item in the model is associated with an action, for instance, clicking an item acts upon it, that functionality is a part of each delegate. This divides the event management between the view, which handles the navigation between items in the view, and the delegate which handles actions on a specific item.
 
@@ -46,8 +46,8 @@ As the item first is clicked, it enters the `expanded` state, causing the item d
 
 <<< @/docs/ch07-modelview/src/delegates/expanding.qml#global
 
-![image](./assets/automatic/delegates-expanding-small.png)
+![image](../../ch07-modelview/assets//automatic/delegates-expanding-small.png)
 
-![image](./assets/automatic/delegates-expanding-large.png)
+![image](../../ch07-modelview/assets//automatic/delegates-expanding-large.png)
 
 The techniques demonstrated here to expand the delegate to fill the entire view can be employed to make an item delegate shift shape in a much smaller way. For instance, when browsing through a list of songs, the current item could be made slightly larger, accommodating more information about that particular item.

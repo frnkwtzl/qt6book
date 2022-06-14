@@ -4,7 +4,7 @@ For operations on rectangles, a convenience API is provided which draws directly
 
 <<< @/docs/ch08-canvas/src/canvas/convenient.qml#M1
 
-![image](./assets/convenient.png)
+![image](../../ch08-canvas/assets//convenient.png)
 
 ::: tip
 The stroke area extends half of the line width on both sides of the path. A 4 px lineWidth will draw 2 px outside the path and 2 px inside.

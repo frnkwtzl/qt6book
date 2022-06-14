@@ -13,7 +13,7 @@ You will catch yourself looking at some animations and just admiring their beaut
 **Unlock the power!**
 :::
 
-![](./assets/animation_sequence.png)
+![](../../ch05-fluid/assets//animation_sequence.png)
 
 <<< @/docs/ch05-fluid/src/animation/AnimationExample.qml#global
 
@@ -93,7 +93,7 @@ You should prefer the child’s geometry to depend on the parent’s geometry if
 
 ### The objects ascending
 
-![](./assets/animationtypes_start.png)
+![](../../ch05-fluid/assets//animationtypes_start.png)
 
 The three objects are all at the same y-position (`y=200`). They all need to travel to `y=40`, each of them using a different method with different side-effects and features.
 
@@ -127,7 +127,7 @@ The click will start the animation using the animation's `start()` function. Eac
 
 We need to define the `target`, which is the element to be animated, along with the names of the properties that we want to animate. We also need to define a `to` value, and, in this case, a `from` value, which allows a restart of the animation.
 
-![](./assets/animationtypes.png)
+![](../../ch05-fluid/assets//animationtypes.png)
 
 A click on the background will reset all objects to their initial position. The first object cannot be restarted except by re-starting the program which triggers the re-loading of the element.
 
@@ -162,7 +162,7 @@ As with other aspects of UI design, animations should be designed carefully to s
 
 In the next example, we will try some easing curves. Each easing curve is displayed by a clickable image and, when clicked, will set a new easing type on the `square` animation and then trigger a `restart()` to run the animation with the new curve.
 
-![](./assets/automatic/easingcurves.png)
+![](../../ch05-fluid/assets//automatic/easingcurves.png)
 
 The code for this example was made a little bit more complicated. We first create a grid of `EasingTypes` and a `Box` which is controlled by the easing types. An easing type just displays the curve which the box shall use for its animation. When the user clicks on an easing curve the box moves in a direction according to the easing curve. The animation itself is a standalone animation with the target set to the box and configured for x-property animation with a duration of 2 seconds.
 
@@ -189,7 +189,7 @@ Often animations will be more complex than just animating one property. You migh
 
 For this, grouped animations can be used. As the name suggests, it’s possible to group animations. Grouping can be done in two ways: parallel or sequential. You can use the `SequentialAnimation` or the `ParallelAnimation` element, which act as animation containers for other animation elements. These grouped animations are animations themselves and can be used exactly as such.
 
-![](./assets/groupedanimation.png)
+![](../../ch05-fluid/assets//groupedanimation.png)
 
 ### Parallel animations
 
@@ -197,7 +197,7 @@ All direct child animations of a parallel animation run in parallel when started
 
 <<< @/docs/ch05-fluid/src/animation/ParallelAnimationExample.qml#global
 
-![](./assets/parallelanimation_sequence.png)
+![](../../ch05-fluid/assets//parallelanimation_sequence.png)
 
 ### Sequential animations
 
@@ -205,13 +205,13 @@ A sequential animation runs each child animation in the order in which it is dec
 
 <<< @/docs/ch05-fluid/src/animation/SequentialAnimationExample.qml#global
 
-![](./assets/sequentialanimation_sequence.png)
+![](../../ch05-fluid/assets//sequentialanimation_sequence.png)
 
 ### Nested animations
 
 Grouped animations can also be nested. For example, a sequential animation can have two parallel animations as child animations, and so on. We can visualize this with a soccer ball example. The idea is to throw a ball from left to right and animate its behavior.
 
-![](./assets/soccer_init.png)
+![](../../ch05-fluid/assets//soccer_init.png)
 
 To understand the animation we need to dissect it into the integral transformations of the object. We need to remember that animations animate property changes. Here are the different transformations:
 
@@ -223,7 +223,7 @@ To understand the animation we need to dissect it into the integral transformati
 
 The whole duration of the animation should take three seconds.
 
-![](./assets/soccer_plan.png)
+![](../../ch05-fluid/assets//soccer_plan.png)
 
 We start with an empty item as the root element of the width of 480 and height of 300.
 
@@ -248,7 +248,7 @@ The next step is to add the background, which in our case are 2 rectangles with 
 
 <<< @/docs/ch05-fluid/src/animation/BouncingBallExample.qml#background
 
-![](./assets/soccer_stage1.png)
+![](../../ch05-fluid/assets//soccer_stage1.png)
 
 The upper blue rectangle takes 200 pixels of the height and the lower one is anchored to the bottom of the sky and to the bottom of the root element.
 
@@ -256,7 +256,7 @@ Let’s bring the soccer ball onto the green. The ball is an image, stored under
 
 <<< @/docs/ch05-fluid/src/animation/BouncingBallExample.qml#soccer-ball
 
-![](./assets/soccer_stage2.png)
+![](../../ch05-fluid/assets//soccer_stage2.png)
 
 The image has a mouse area attached to it. If the ball is clicked, the position of the ball will reset and the animation is restarted.
 
@@ -280,7 +280,7 @@ SequentialAnimation {
 }
 ```
 
-![](./assets/soccer_stage3.png)
+![](../../ch05-fluid/assets//soccer_stage3.png)
 
 This specifies that 40% of the total animation duration is the up animation and 60% the down animation, with each animation running after the other in sequence. The transformations are animated on a linear path but there is no curving currently. Curves will be added later using the easing curves, at the moment we’re concentrating on getting the transformations animated.
 
@@ -301,7 +301,7 @@ ParallelAnimation {
 }
 ```
 
-![](./assets/soccer_stage4.png)
+![](../../ch05-fluid/assets//soccer_stage4.png)
 
 In the end, we would like the ball to be rotating. For this, we need to add another animation to the parallel animation. We choose `RotationAnimation`, as it’s specialized for rotation.
 

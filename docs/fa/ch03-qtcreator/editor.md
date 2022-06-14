@@ -4,5 +4,5 @@ When you open a project or you just created a new project Qt Creator will switch
 
 The editor provides syntax highlighting, code-completion, and quick-fixes. Also, it supports several commands for code refactoring. When working with the editor you will have the feeling that everything reacts immediately. This is thanks to the developers of Qt Creator which made the tool feel really snappy.
 
-![](./assets/creator-editor.png)
+![](../../ch03-qtcreator/assets//creator-editor.png)
 

@@ -2,9 +2,9 @@
 
 Repeaters work well for limited and static sets of data, but in the real world, models are commonly more complex – and larger. Here, a smarter solution is needed. For this, Qt Quick provides the `ListView` and `GridView` elements. These are both based on a `Flickable` area, so the user can move around in a larger dataset. At the same time, they limit the number of concurrently instantiated delegates. For a large model, that means fewer elements in the scene at once.
 
-![image](./assets/automatic/listview-basic.png)
+![image](../../ch07-modelview/assets//automatic/listview-basic.png)
 
-![image](./assets/automatic/gridview-basic.png)
+![image](../../ch07-modelview/assets//automatic/gridview-basic.png)
 
 The two elements are similar in their usage. We will begin with the `ListView` and then describe the `GridView` with the former as the starting point of the comparison. Notice that the `GridView` places a list of items into a two-dimensional grid, left-to-right or top-to-bottom. If you want to show a table of data you need to use the `TableView` which is described in the Table Models section.
 
@@ -12,11 +12,11 @@ The `ListView` is similar to the `Repeater` element. It uses a `model`, instanti
 
 <<< @/docs/ch07-modelview/src/listview/basic.qml#global
 
-![image](./assets/automatic/listview-basic.png)
+![image](../../ch07-modelview/assets//automatic/listview-basic.png)
 
 If the model contains more data than can fit onto the screen, the `ListView` only shows part of the list. However, as a consequence of the default behavior of Qt Quick, the list view does not limit the screen area within which the delegates are shown. This means that delegates may be visible outside the list view and that the dynamic creation and destruction of delegates outside the list view is visible to the user. To prevent this, clipping must be activated on the `ListView` element by setting the `clip` property to `true`. The illustration below shows the result of this (left view), compared to when the `clip` property is `false` (right view).
 
-![image](./assets/automatic/listview-clip.png)
+![image](../../ch07-modelview/assets//automatic/listview-clip.png)
 
 To the user, the `ListView` is a scrollable area. It supports kinetic scrolling, which means that it can be flicked to quickly move through the contents. By default, it also can be stretched beyond the end of contents, and then bounces back, to signal to the user that the end has been reached.
 
@@ -30,7 +30,7 @@ The list view provides a vertically scrolling list by default, but horizontal sc
 
 <<< @/docs/ch07-modelview/src/listview/horizontal.qml#global
 
-![image](./assets/automatic/listview-horizontal.png)
+![image](../../ch07-modelview/assets//automatic/listview-horizontal.png)
 
 As you can tell, the direction of the horizontal flows from the left to the right by default. This can be controlled through the `layoutDirection` property, which can be set to either `Qt.LeftToRight` or `Qt.RightToLeft`, depending on the flow direction.
 
@@ -46,7 +46,7 @@ In the example, the `ListView.view.width` attached property is used for width. T
 
 <<< @/docs/ch07-modelview/src/listview/highlight.qml#global
 
-![image](./assets/automatic/listview-highlight.png)
+![image](../../ch07-modelview/assets//automatic/listview-highlight.png)
 
 When using a highlight in conjunction with a `ListView`, a number of properties can be used to control its behavior. The `highlightRangeMode` controls how the highlight is affected by what is shown in the view. The default setting, `ListView.NoHighlightRange` means that the highlight and the visible range of items in the view not being related at all.
 
@@ -70,7 +70,7 @@ The example below illustrates how a header and footer can be used to enhance the
 
 <<< @/docs/ch07-modelview/src/listview/header-footer.qml#global
 
-![image](./assets/automatic/listview-header-footer.png)
+![image](../../ch07-modelview/assets//automatic/listview-header-footer.png)
 
 ::: tip
 Header and footer delegates do not respect the `spacing` property of a `ListView`, instead they are placed directly adjacent to the next item delegate in the list. This means that any spacing must be a part of the header and footer items.
@@ -80,7 +80,7 @@ Header and footer delegates do not respect the `spacing` property of a `ListView
 
 Using a `GridView` is very similar to using a `ListView`. The only real difference is that the grid view places the delegates in a two-dimensional grid instead of in a linear list.
 
-![image](./assets/automatic/gridview-basic.png)
+![image](../../ch07-modelview/assets//automatic/gridview-basic.png)
 
 Compared to a list view, the grid view does not rely on spacing and the size of its delegates. Instead, it uses the `cellWidth` and `cellHeight` properties to control the dimensions of the contents delegates. Each delegate item is then placed in the top left corner of each such cell.
 

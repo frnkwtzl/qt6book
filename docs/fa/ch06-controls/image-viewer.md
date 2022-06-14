@@ -8,7 +8,7 @@ First, we create it for desktop using the Fusion style, then we will refactor it
 
 The desktop version is based around a classic application window with a menu bar, a tool bar and a document area. The application can be seen in action below.
 
-![](./assets/viewer-window.png)
+![](../../ch06-controls/assets//viewer-window.png)
 
 We use the Qt Creator project template for an empty Qt Quick application as a starting point. However, we replace the default `Window` element from the template with a `ApplicationWindow` from the `QtQuick.Controls` module. The code below shows `main.qml` where the window itself is created and setup with a default size and title.
 
@@ -29,7 +29,7 @@ ApplicationWindow {
 
 The `ApplicationWindow` consists of four main areas as shown below. The menu bar, tool bar and status bar are usually populated by instances of `MenuBar`, `ToolBar` or `TabBar` controls, while the contents area is where the children of the window go. Notice that the image viewer application does not feature a status bar; that is why it is missing from the code show here, as well as from the figure above.
 
-![](./assets/applicationwindow-areas.png)
+![](../../ch06-controls/assets//applicationwindow-areas.png)
 
 As we are targeting desktop, we enforce the use of the *Fusion* style. This can be done via a configuration file, environment variables, command line arguments, or programmatically in the C++ code. We do it the latter way by adding the following line to `main.cpp`:
 
@@ -152,7 +152,7 @@ ApplicationWindow {
 
 The `aboutDialog` element is based on the `Dialog` control from the `QtQuick.Controls` module, which is the base for custom dialogs. The dialog we are about to create is shown in the figure below.
 
-![](./assets/viewer-about.png)
+![](../../ch06-controls/assets//viewer-about.png)
 
 The code for the `aboutDialog` can be split into three parts. First, we setup the dialog window with a title. Then, we provide some contents for the dialog – in this case, a `Label` control. Finally, we opt to use a standard *Ok* button to close the dialog.
 
@@ -184,7 +184,7 @@ The end result of all this is a functional, albeit simple, desktop application f
 
 There are a number of differences in how a user interface is expected to look and behave on a mobile device compared to a desktop application. The biggest difference for our application is how the actions are accessed. Instead of a menu bar and a tool bar, we will use a drawer from which the user can pick the actions. The drawer can be swiped in from the side, but we also offer a hamburger button in the header. The resulting application with the drawer open can be seen below.
 
-![](./assets/viewer-mobile-drawer.png)
+![](../../ch06-controls/assets//viewer-mobile-drawer.png)
 
 First of all, we need to change the style that is set in `main.cpp` from *Fusion* to *Material*:
 
@@ -246,7 +246,7 @@ ApplicationWindow {
 
 The next change is in the `header` of the `ApplicationWindow`. Instead of a desktop style toolbar, we add a button to open the drawer and a label for the title of our application.
 
-![](./assets/viewer-mobile.png)
+![](../../ch06-controls/assets//viewer-mobile.png)
 
 The `ToolBar` contains two child elements: a `ToolButton` and a `Label`.
 
@@ -450,7 +450,7 @@ ImageViewerWindow {
 
 The two `main.qml` files are placed in the file system as shown below. This lets the file selector that the QML engine automatically creates pick the right file. By default, the *Fusion* `main.qml` is loaded. If the `android` selector is present, then the *Material* `main.qml` is loaded instead.
 
-![](./assets/android-selector.png)
+![](../../ch06-controls/assets//android-selector.png)
 
 Until now the style has been set in `main.cpp`. We could continue doing this and use `#ifdef` expressions to set different styles for different platforms. Instead we will use the file selector mechanism again and set the style using a configuration file. Below, you can see the file for the *Material* style, but the *Fusion* file is equally simple.
 

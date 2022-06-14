@@ -8,7 +8,7 @@ First, we set up our scene, with a grid centered in the field and our source ima
 
 <<< @/docs/ch10-effects/src/effects/redlense/1/redlense1.qml#M1
 
-![image](./assets/redlense1.png)
+![image](../../ch10-effects/assets//redlense1.png)
 
 ## A red shader
 
@@ -18,7 +18,7 @@ Next, we will add a shader, which displays a red rectangle by providing for each
 
 In the fragment shader we simply assign a `vec4(1.0, 0.0, 0.0, 1.0)`, representing the color red with full opacity (alpha=1.0), to the `fragColor` for each fragment, turning each pixel to a solid red.
 
-![image](./assets/redlense2.png)
+![image](../../ch10-effects/assets//redlense2.png)
 
 ## A red shader with texture
 
@@ -30,7 +30,7 @@ The full shader contains now back our image source as variant property and we ha
 
 In the fragment shader, we pick the texture fragment `texture(source, qt_TexCoord0)` and apply the red color to it.
 
-![image](./assets/redlense3.png)
+![image](../../ch10-effects/assets//redlense3.png)
 
 ## The red channel property
 
@@ -44,7 +44,7 @@ Notice that the `redChannel` must come after the implicit `qt_Matrix` and `qt_Op
 
 To make the lens really a lens, we change the *vec4* color to be *vec4(redChannel, 1.0, 1.0, 1.0)* so that the other colors are multiplied by 1.0 and only the red portion is multiplied by our *redChannel* variable.
 
-![image](./assets/redlense4.png)
+![image](../../ch10-effects/assets//redlense4.png)
 
 ## The red channel animated
 
@@ -54,7 +54,7 @@ As the *redChannel* property is just a normal property it can also be animated a
 
 Here the final result.
 
-![image](./assets/redlense5.png)
+![image](../../ch10-effects/assets//redlense5.png)
 
 The shader effect on the 2nd row is animated from 0.0 to 1.0 with a duration of 4 seconds. So the image goes from no red information (0.0 red) over to a normal image (1.0 red).
 

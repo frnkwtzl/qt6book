@@ -18,15 +18,15 @@ To generate an asset that we can import, we will use Blender to create a scene w
 
 Blender is available from [https://www.blender.org/](https://www.blender.org/), and mastering Blender is a topic for another book, so we will do the most basic thing possible. Remove the original cube (select the cube with the left mouse button, press``shift + x``, select _Delete_), add a mesh (from the keyboard ``shift + a``, select _Mesh_), and select to add a monkey (select _Monkey_ from the list of available meshes). There are a number of video tutorials demonstrating how to do this. The resulting Blender user interface with the monkey head scene can be seen below.
 
-![image](./assets/blender-monkey.png)
+![image](../../ch12-qtquick3d/assets//blender-monkey.png)
 
 Once the head is in place, go to File -> Export -> COLLADA.
 
-![image](./assets/blender-export-menu.png)
+![image](../../ch12-qtquick3d/assets//blender-export-menu.png)
 
 This takes you to the Export COLLADA dialog where you can export the resulting scene.
 
-![image](./assets/blender-export-collada.png)
+![image](../../ch12-qtquick3d/assets//blender-export-collada.png)
 
 ::: tip Tip
 Both the blender scene and the exported COLLADA file (``*.dae``) can be found among the example files for the chapter.
@@ -38,11 +38,11 @@ Once the COLLADA file has been saved to disk, we can prepare it for use in Qt Qu
 
 We start by adding the ``monkey.dae`` file to the input files section, and set the output folder to a reasonable path.Your paths will most likely be different from the ones shown in the screenshot.
 
-![image](./assets/balsamui-1.png)
+![image](../../ch12-qtquick3d/assets//balsamui-1.png)
 
 The _Settings_ tab in the ``balsamui`` includes all the options. These all correspond to a command line option of the ``balsam`` tool. For now, we will leave all of them with their default values.
 
-![image](./assets/balsamui-2.png)
+![image](../../ch12-qtquick3d/assets//balsamui-2.png)
 
 Now, go back to the _Input_ tab and click _Convert_. This will result in the following output in the status section of the user interface:
     
@@ -81,7 +81,7 @@ Having done this, we can populate a ``View3D`` with the ``Monkey.qml`` as shown 
 
 The ``Monkey.qml`` contains the entire Blender scene, including the camera and a light, so the result is a complete scene as shown below.
 
-![image](./assets/asset-first-input.png)
+![image](../../ch12-qtquick3d/assets//asset-first-input.png)
 
 The interested reader is encouraged to explore the ``Monkey.qml`` file. As you will see, it contains a completely normal Qt Quick 3D scene built from the elements we already have used in this chapter.
 
@@ -97,6 +97,6 @@ Here, we put a ``DirectionalLight`` and ``PerspectiveCamera`` into a ``View3D``,
 
 The resulting view is shown below.
 
-![image](./assets/asset-second-input.png)
+![image](../../ch12-qtquick3d/assets//asset-second-input.png)
 
 This demonstrates how a simple mesh can be exported from a 3D design tool such as blender, converted to a Qt Quick 3D format and then used from QML. One thing to think about is that we can import the entire scene as is, i.e. using ``Monkey.qml``, or use only the assets, e.g. ``suzanne.mesh``. This puts you in control of the trade-off between simple importing of a scene, and added complexity while gaining flexibility by setting up the scene in QML.

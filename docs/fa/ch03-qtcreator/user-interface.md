@@ -14,7 +14,7 @@ On the left side, you will see the mode-selector. The mode selectors support typ
 
 Below the mode-selectors, you will find the actual project-configuration selector and the run/debug
 
-![](./assets/creator-welcome.png)
+![](../../ch03-qtcreator/assets//creator-welcome.png)
 
 Most of the time you will be in the edit mode with the code-editor in the central panel. From time to time, you will visit the Projects mode when you need to configure your project. And then you press `Run`. Qt Creator is smart enough to ensure your project is fully built before running it.
 

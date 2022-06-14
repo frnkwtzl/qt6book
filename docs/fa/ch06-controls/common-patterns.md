@@ -6,13 +6,13 @@ There a number of common user interface patterns that can be implemented using Q
 
 For this example we will create a tree of pages that can be reached from the previous level of screens. The structure is pictured below.
 
-![](./assets/nested-screens.png)
+![](../../ch06-controls/assets//nested-screens.png)
 
 The key component in this type of user interface is the `StackView`. It allows us to place pages on a stack which then can be popped when the user wants to go back. In the example here, we will show how this can be implemented.
 
 The initial home screen of the application is shown in the figure below.
 
-![](./assets/interface-stack-home.png)
+![](../../ch06-controls/assets//interface-stack-home.png)
 
 The application starts in `main.qml`, where we have an `ApplicationWindow` containing a `ToolBar`, a `Drawer`, a `StackView` and a home page element, `Home`. We will look into each of the components below.
 
@@ -139,7 +139,7 @@ ApplicationWindow {
 
 Now we’ve seen how to reach the *About* and *Profile* pages, but we also want to make it possible to reach the *Edit Profile* page from the *Profile* page. This is done via the `Button` on the *Profile* page. When the button is clicked, the `EditProfile.qml` file is pushed onto the `StackView`.
 
-![](./assets/interface-stack-profile.png)
+![](../../ch06-controls/assets//interface-stack-profile.png)
 
 <<< @/docs/ch06-controls/src/interface-stack/Profile.qml
 
@@ -147,11 +147,11 @@ Now we’ve seen how to reach the *About* and *Profile* pages, but we also want 
 
 For this example we create a user interface consisting of three pages that the user can shift through. The pages are shown in the diagram below. This could be the interface of a health tracking app, tracking the current state, the user’s statistics and the overall statistics.
 
-![](./assets/side-by-side-screen.png)
+![](../../ch06-controls/assets//side-by-side-screen.png)
 
 The illustration below shows how the *Current* page looks in the application. The main part of the screen is managed by a `SwipeView`, which is what enables the side by side screen interaction pattern. The title and text shown in the figure come from the page inside the `SwipeView`, while the `PageIndicator` (the three dots at the bottom) comes from `main.qml` and sits under the `SwipeView`. The page indicator shows the user which page is currently active, which helps when navigating.
 
-![](./assets/interface-side-by-side-current.png)
+![](../../ch06-controls/assets//interface-side-by-side-current.png)
 
 
 Diving into `main.qml`, it consists of an `ApplicationWindow` with the `SwipeView`.
@@ -246,7 +246,7 @@ Page {
 }
 ```
 
-![](./assets/interface-side-by-side-community.png)
+![](../../ch06-controls/assets//interface-side-by-side-community.png)
 
 The back button explicitly calls the `setCurrentIndex` of the `SwipeView` to set the index to zero, returning the user directly to the *Current* page. During each transition between pages the `SwipeView` provides a transition, so even when explicitly changing the index the user is given a sense of direction.
 
@@ -279,7 +279,7 @@ Page {
 
 This example shows how to implement a desktop-oriented, document-centric user interface. The idea is to have one window per document. When opening a new document, a new window is opened. To the user, each window is a self-contained world with a single document.
 
-![Two document windows and the close warning dialog.](./assets/interface-document-window.png)
+![Two document windows and the close warning dialog.](../../ch06-controls/assets//interface-document-window.png)
 
 
 The code starts from an `ApplicationWindow` with a *File* menu with the standard operations: *New*, *Open*, *Save* and *Save As*. We put this in the `DocumentWindow.qml`.
@@ -500,7 +500,7 @@ The entire flow for the close and save/save as logic is shown below. The system 
 
 This looks complicated compared to implementing this using `Qt Widgets` and C++. This is because the dialogs are not blocking to QML. This means that we cannot wait for the outcome of a dialog in a `switch` statement. Instead we need to remember the state and continue the operation in the respective `onYesClicked`, `onNoClicked`, `onAccepted`, and `onRejected` handlers.
 
-![](./assets/dialog-state-machine.png)
+![](../../ch06-controls/assets//dialog-state-machine.png)
 
 The final piece of the puzzle is the window title. It is composed of the `fileName` and `isDirty` properties.
 

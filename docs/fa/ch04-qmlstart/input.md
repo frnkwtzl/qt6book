@@ -33,7 +33,7 @@ Rectangle {
 }
 ```
 
-![](./assets/textinput.png)
+![](../../ch04-qmlstart/assets//textinput.png)
 
 
 The user can click inside a `TextInput` to change the focus. To support switching the focus by keyboard, we can use the `KeyNavigation` attached property.
@@ -115,7 +115,7 @@ Rectangle {
 }
 ```
 
-![](./assets/textinput3.png)
+![](../../ch04-qmlstart/assets//textinput3.png)
 
 Try the tab key for navigation. You will experience the focus does not change to `input2`. The simple use of `focus: true` is not sufficient. The problem is that when the focus was transferred to the `input2` element, the top-level item inside the `TlineEditV1` (our `Rectangle`) received focus, and did not forward the focus to the `TextInput`. To prevent this, QML offers the `FocusScope`.
 
@@ -219,7 +219,7 @@ Rectangle {
 }
 ```
 
-![](./assets/textedit.png)
+![](../../ch04-qmlstart/assets//textedit.png)
 
 ## Keys Element
 
@@ -227,5 +227,5 @@ The attached property `Keys` allows executing code based on certain key presses.
 
 <<< @/docs/ch04-qmlstart/src/input/KeysExample.qml#global
 
-![](./assets/keys.png)
+![](../../ch04-qmlstart/assets//keys.png)
 

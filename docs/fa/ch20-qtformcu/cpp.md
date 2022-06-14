@@ -6,7 +6,7 @@ In order to demonstrate the connection between C++ and QML in Qt for MCUs, we wi
 
 The singleton will be used from a small UI as shown below.
 
-![](./assets/counter.png)
+![](../../ch20-qtformcu/assets//counter.png)
 
 The ``Counter`` struct provides a property, ``value``, as well as methods for changing the value, ``increase`` and ``decrease``, as well as a ``reset`` method. It also provides a signal, ``hasBeenReset``.
 
@@ -40,7 +40,7 @@ The ``increase`` and ``decrease`` functions look similar. They use the getter an
 
 The QML code produces the simple user interface shown below.
 
-![](./assets/counter.png)
+![](../../ch20-qtformcu/assets//counter.png)
 
 We will look at the UI in three parts. First, the basic structure, and bindings to ``Counter.value``:
 

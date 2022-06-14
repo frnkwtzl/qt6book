@@ -42,7 +42,7 @@ Rectangle {
 }
 ```
 
-![](./assets/rectangle2.png)
+![](../../ch04-qmlstart/assets//rectangle2.png)
 
 ::: tip
 Valid color values are colors from the SVG color names (see  [http://www.w3.org/TR/css3-color/#svg-color](http://www.w3.org/TR/css3-color/#svg-color)). You can provide colors in QML in different ways, but the most common way is an RGB string (‘#FF4444’) or as a color name (e.g. ‘white’).
@@ -70,7 +70,7 @@ Rectangle {
 }
 ```
 
-![](./assets/rectangle3.png)
+![](../../ch04-qmlstart/assets//rectangle3.png)
 
 A gradient is defined by a series of gradient stops. Each stop has a position and a color. The position marks the position on the y-axis (0 = top, 1 = bottom). The color of the `GradientStop` marks the color at that position.
 
@@ -95,7 +95,7 @@ Text {
 }
 ```
 
-![](./assets/text.png)
+![](../../ch04-qmlstart/assets//text.png)
 
 Text can be aligned to each side and the center using the `horizontalAlignment` and `verticalAlignment` properties. To further enhance the text rendering you can use the `style` and `styleColor` property, which allows you to render the text in outline, raised and sunken mode. 
 
@@ -150,7 +150,7 @@ Image {
 }
 ```
 
-![](./assets/image.png)
+![](../../ch04-qmlstart/assets//image.png)
 
 ::: tip
 A URL can be a local path with forward slashes ( “./images/home.png” ) or a web-link (e.g. “[http://example.org/home.png](http://example.org/home.png)”).
@@ -192,9 +192,9 @@ Rectangle {
 }
 ```
 
-![MouseArea](./assets/mousearea1.png)
+![MouseArea](../../ch04-qmlstart/assets//mousearea1.png)
 
-![MouseArea](./assets/mousearea2.png)
+![MouseArea](../../ch04-qmlstart/assets//mousearea2.png)
 
 ::: tip
 This is an important aspect of Qt Quick: the input handling is separated from the visual presentation. This allows you to show the user an interface element where the actual interaction area can be larger.

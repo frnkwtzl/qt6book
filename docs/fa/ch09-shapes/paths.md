@@ -4,7 +4,7 @@ As we saw in the last section, shapes are built from paths, which are built from
 
 As shown in the screenshot below, there are a few basic shapes that can be used to build your path. These are: lines, arcs, and various curves. It is also possible to move without drawing using a ``PathMove`` element. In addition to these elements, the ``ShapePath`` element also lets you specify a starting point using the ``startX`` and ``startY`` properties.
 
-![](./assets/automatic/paths.png)
+![](../../ch09-shapes/assets//automatic/paths.png)
 
 Lines are drawn using the ``PathLine`` element, as shown below. For creating multiple independent lines, the ``PathMultiline`` can be used.
 

@@ -10,31 +10,31 @@ Some of the styles can be tweaked by modifying palettes. The *Imagine* style is 
 
 * Basic
     
-    ![](./assets/style-basic.png)
+    ![](../../ch06-controls/assets//style-basic.png)
 
 * Fusion
 
-    ![](././assets/style-fusion.png)
+    ![](./../../ch06-controls/assets//style-fusion.png)
 
 * macOS
 
-    ![](././assets/style-imagine.png)
+    ![](./../../ch06-controls/assets//style-imagine.png)
 
 * Material
 
-    ![](././assets/style-material.png)
+    ![](./../../ch06-controls/assets//style-material.png)
 
 * Imagine
 
-    ![](././assets/style-imagine.png)
+    ![](./../../ch06-controls/assets//style-imagine.png)
 
 * Windows
 
-    ![](././assets/style-imagine.png)
+    ![](./../../ch06-controls/assets//style-imagine.png)
     
 * Universal
     
-    ![](./assets/style-universal.png)
+    ![](../../ch06-controls/assets//style-universal.png)
 
 Qt Quick Controls 2 is available from the `QtQuick.Controls` import. The following modules are also of interest:
 

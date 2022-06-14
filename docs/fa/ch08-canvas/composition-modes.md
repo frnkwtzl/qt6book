@@ -15,4 +15,4 @@ The example below will demonstrate all composition modes by iterating over them 
 
 <<< @/docs/ch08-canvas/src/canvas/compositeoperation.qml#M1
 
-![image](./assets/composite-operations.png)
+![image](../../ch08-canvas/assets//composite-operations.png)

@@ -35,7 +35,7 @@ entryEffect: ImageParticle.Scale
 
 So now we have rotating golden stars appearing all over the place.
 
-![image](./assets/particleparameters.png)
+![image](../../ch10-effects/assets//particleparameters.png)
 
 Here is the code we changed for the image-particle in one block.
 

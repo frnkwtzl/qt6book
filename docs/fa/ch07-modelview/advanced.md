@@ -14,7 +14,7 @@ This is where the `preferredHighlightBegin` and `preferredHighlightEnd` properti
 
 In the `Path`, the `PathAttribute` elements are placed between elements, just as `PathPercent` elements. They let you specify property values that are interpolated along the path. These properties are attached to the delegates and can be used to control any conceivable property.
 
-![image](./assets/automatic/pathview-coverview.png)
+![image](../../ch07-modelview/assets//automatic/pathview-coverview.png)
 
 The example below demonstrates how the `PathView` element is used to create a view of cards that the user can flip through. It employs a number of tricks to do this. The path consists of three `PathLine` elements. Using `PathPercent` elements, the central element is properly centered and provided enough space not to be cluttered by other elements. Using `PathAttribute` elements, the rotation, size and `z`-value is controlled.
 
@@ -44,7 +44,7 @@ The `TableView` is similar to other views in that it combines a `model` with a `
 
 In the example below, we set up a simple `TableView` with a custom model exposed from C++. At the moment, it is not possible to create table oriented models directly from QML, but in the ‘Qt and C++’ chapter the concept is explained. The running example is shown in the image below.
 
-![image](./assets/tableview.png)
+![image](../../ch07-modelview/assets//tableview.png)
 
 In the example below, we create a `TableView` and set the `rowSpacing` and `columnSpacing` to control the horizontal and vertical gaps between delegates. The rest of the properties are set up as for any other type of view.
 
@@ -84,7 +84,7 @@ As XML is a ubiquitous data format, QML provides the `XmlListModel` element that
 
 The example below demonstrates fetching images from an RSS flow. The `source` property refers to a remote location over HTTP, and the data is automatically downloaded.
 
-![image](./assets/automatic/xmllistmodel-images.png)
+![image](../../ch07-modelview/assets//automatic/xmllistmodel-images.png)
 
 When the data has been downloaded, it is processed into model items and roles. The `query` property of the `XmlListModel` is an XPath representing the base query for creating model items. In this example, the path is `/rss/channel/item`, so for every item tag, inside a channel tag, inside an RSS tag, a model item is created.
 
@@ -98,7 +98,7 @@ The `imageSource` property extracts the value of an attribute of a tag instead o
 
 Sometimes, the data in a list can be divided into sections. It can be as simple as dividing a list of contacts into sections under each letter of the alphabet or music tracks under albums. Using a `ListView` it is possible to divide a flat list into categories, providing more depth to the experience.
 
-![image](./assets/automatic/listview-sections.png)
+![image](../../ch07-modelview/assets//automatic/listview-sections.png)
 
 In order to use sections, the `section.property` and `section.criteria` must be set up. The `section.property` defines which property to use to divide the contents into sections. Here, it is important to know that the model must be sorted so that each section consists of continuous elements, otherwise, the same property name might appear in multiple locations.
 
@@ -117,7 +117,7 @@ The example below demonstrates the section concept by showing a list of spacemen
 In some cases you might want to use a list view for a large set of different items. You can solve this using dynamic QML and `Loader`, but another options is to use an `ObjectModel` from the `QtQml.Models` module. The object model is different from other models as it lets you put the actual visual elements side the model. That way, the view does not need any `delegate`.
 
 
-![image](./assets/automatic/delegates-objectmodel.png)
+![image](../../ch07-modelview/assets//automatic/delegates-objectmodel.png)
 
 In the example below we put three `Rectangle` elements into the `ObjectModel`. However, one rectangle has a `Text` element child while the last one has rounded corners. This would have resulted in a table-style model using something like a `ListModel`. It would also have resulted in empty `Text` elements in the model.
 

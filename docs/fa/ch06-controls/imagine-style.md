@@ -8,7 +8,7 @@ The details of 9-patch images, and how each control can be styled is covered in 
 
 The application's style customizes the `ApplicationWindow` and `Button` controls. For the buttons, the normal state, as well as the *pressed* and *checked* states are handled. The demonstration application is shown below.
 
-![](./assets/style-imagine-example.png)
+![](../../ch06-controls/assets//style-imagine-example.png)
 
 The code for this uses a `Column` for the clickable buttons, and a `Grid` for the checkable ones. The clickable buttons also stretch with the window width.
 
@@ -35,7 +35,7 @@ The assets for the `Button` control are `button-background.9.png`, `button-backg
 
 The states that are needed depend on your user interface. For instance, the hovered style is never used for touch-based interfaces.
 
-![](./assets/button-background-checked-enlarged.9.png)
+![](../../ch06-controls/assets//button-background-checked-enlarged.9.png)
 
 Looking at an enlarged version of `button-background-checked.9.png` above, you can see the 9-patch guide lines along the sides. The purple background has been added for visibility reasons. This area is actually transparent in the asset used in the example.
 
@@ -50,5 +50,5 @@ The pixes along the edges of the image can be either white/transparent, black, o
 
 A demonstration of the usage of an *inset* area is shown in `button-background.9.png` (below) and `button-background-checked.9.png` (above): the image seems to light up, but not move.
 
-![The ``button-background.9.png`` asset enlarged.](./assets/button-background-enlarged.9.png)
+![The ``button-background.9.png`` asset enlarged.](../../ch06-controls/assets//button-background-enlarged.9.png)
 

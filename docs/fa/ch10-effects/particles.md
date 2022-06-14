@@ -5,7 +5,7 @@ An emitter provides also the direction for particle using a vector space. Partic
 
 Particles in a system can share timed transitions using the `ParticleGroup` element. By default, every particle is on the empty (‘’) group.
 
-![image](./assets/particlesystem.png)
+![image](../../ch10-effects/assets//particlesystem.png)
 
 
 * `ParticleSystem` - manages shared time-line between emitters

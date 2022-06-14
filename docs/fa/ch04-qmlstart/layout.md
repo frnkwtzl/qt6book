@@ -2,11 +2,11 @@
 
 QML provides a flexible way to layout items using anchors. The concept of anchoring is fundamental to `Item`, and is available to all visual QML elements. Anchors act like a contract and are stronger than competing geometry changes. Anchors are expressions of relativeness; you always need a related element to anchor with.
 
-![](./assets/anchors.png)
+![](../../ch04-qmlstart/assets//anchors.png)
 
 An element has 6 major anchor lines (`top`, `bottom`, `left`, `right`, `horizontalCenter`, `verticalCenter`). Additionally, there is the `baseline` anchor for text in `Text` elements. Each anchor line comes with an offset. In the case of the `top`, `bottom`, `left`, and `right` anchors, they are called margins. For `horizontalCenter`, `verticalCenter` and `baseline` they are called offsets.
 
-![](./assets/anchorgrid.png)
+![](../../ch04-qmlstart/assets//anchorgrid.png)
 
 
 * **(1)** An element fills a parent element.

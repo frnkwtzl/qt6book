@@ -8,7 +8,7 @@ There are different vector spaces available to define the velocity or accelerati
 * `PointDirection` - a direction that varies in x and y components
 * `TargetDirection` - a direction towards the target point
 
-![image](./assets/particle_directions.png)
+![image](../../ch10-effects/assets//particle_directions.png)
 
 Let’s try to move the particles over from the left to the right side of our scene by using the velocity directions.
 
@@ -37,7 +37,7 @@ velocity: AngleDirection {
 }
 ```
 
-![image](./assets/angledirection.png)
+![image](../../ch10-effects/assets//angledirection.png)
 
 Here is the full source code, with an average lifetime set to 6.4 seconds. We set the emitter width and height to 1px. This means all particles are emitted at the same location and from thereon travel based on our given trajectory.
 
@@ -63,7 +63,7 @@ acceleration: AngleDirection {
 
 The result is an arc going from the center-left to the bottom right.
 
-![image](./assets/angledirection2.png)
+![image](../../ch10-effects/assets//angledirection2.png)
 
 The values are discovered by trial-and-error.
 
@@ -94,7 +94,7 @@ velocity: PointDirection {
 
 The result should be particles traveling in a 15-degree cone from right to left.
 
-![image](./assets/pointdirection.png)
+![image](../../ch10-effects/assets//pointdirection.png)
 
 Now coming to our last contender, the `TargetDirection`. The target direction allows us to specify a target point as an x and y coordinate relative to the emitter or an item. When an item has specified the center of the item will become the target point. You can achieve the 15-degree cone by specifying a target variation of 1/6 th of the x target:
 
@@ -115,4 +115,4 @@ I spare you the image as it looks the same as the previous one, instead, I have 
 
 In the following image, the red and the green circle specify each a target item for the target direction of the velocity respective the acceleration property. Each target direction has the same parameters. Here the question: Who is responsible for velocity and who is for acceleration?
 
-![image](./assets/directionquest.png)
+![image](../../ch10-effects/assets//directionquest.png)

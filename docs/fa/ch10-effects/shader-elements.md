@@ -6,7 +6,7 @@ The default shader uses the source and renders it unmodified. Below, we first se
 
 <<< @/docs/ch10-effects/src/effects/default/defaultshader.qml#M1
 
-![image](./assets/defaultshader.png)
+![image](../../ch10-effects/assets//defaultshader.png)
 
 In the above example, we have a row of 3 images. The first is the real image. The second is rendered using the default shader and the third is rendered using the shader code for the fragment and vertex as shown below. Let's have a look at the shaders.
 

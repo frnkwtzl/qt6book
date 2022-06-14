@@ -18,5 +18,5 @@ List of [Qt Creator shortcuts](http://doc.qt.io/qtcreator/creator-keyboard-short
 
 You can configure the shortcuts from inside creator using the settings dialog.
 
-![](./assets/creator-edit-shortcuts.png)
+![](../../ch03-qtcreator/assets//creator-edit-shortcuts.png)
 

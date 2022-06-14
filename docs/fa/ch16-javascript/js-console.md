@@ -8,7 +8,7 @@ A JS console inside your next project can be really beneficial for testing. Enha
 
 
 
-![image](./assets/jsconsole.png)
+![image](../../ch16-javascript/assets//jsconsole.png)
 
 We use Qt Creator to create a Qt Quick UI project using Qt Quick controls. We call the project JSConsole. After the wizard has finished we have already a basic structure for the application with an application window and a menu to exit the application.
 

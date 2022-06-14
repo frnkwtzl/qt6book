@@ -4,7 +4,7 @@ In Qt Quick Ultralite, it is possible to create models in QML using the ``ListMo
 
 In this chapter we will create a list of cities in Europe, listing the name of the city and the country in which the city is located. The cities will be shown in a ``ListView`` as shown below:
 
-![](./assets/model-1.png)
+![](../../ch20-qtformcu/assets//model-1.png)
 
 ## The C++
 
@@ -24,7 +24,7 @@ We also implement a constructor for the ``CityModel`` struct that populates the 
 
 In the example, we show the model as a scrollable list, as shown below.
 
-![](./assets/model-2.png)
+![](../../ch20-qtformcu/assets//model-2.png)
 
 The QML code is shown in its entirety below:
 
@@ -36,7 +36,7 @@ Then the delegate, ``cityDelegate`` is implemented as a ``Component``. This mean
 
 Finally, the ``ListView`` element joins the model and the delegate, resulting in the list shown in the screenshots in this chapter.
 
-![](./assets/model-3.png)
+![](../../ch20-qtformcu/assets//model-3.png)
 
 An interesting aspect of the QML is how the font of the ``Text`` elements is configured. The ``unicodeCoverage`` property lets us tell the Qt Quick Ultralite compiler what characters we would like to be able to render. When specifying fixed strings, the Qt Quick Ultralite tooling generates minimal fonts containing exactly the glyphs that we intend to use. However, since the model will provide us with dynamic data, we need to tell the font what characters we expect to use.
 

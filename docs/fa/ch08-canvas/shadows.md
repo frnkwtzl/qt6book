@@ -16,5 +16,5 @@ Finally, we draw our “Canvas” text using a large bold 80px font from the *Ub
 
 <<< @/docs/ch08-canvas/src/canvas/shadow.qml#M3
 
-![image](./assets/shadow.png)
+![image](../../ch08-canvas/assets//shadow.png)
 

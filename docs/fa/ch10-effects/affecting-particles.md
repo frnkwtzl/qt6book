@@ -21,7 +21,7 @@ Allows particle to age faster. the `lifeLeft` property specified how much life a
 
 In the example, we shorten the life of the upper particles once when they reach the age of affector to 1200 msec. As we have set the `advancePosition` to true, we see the particle appearing again on a position when the particle has 1200 msecs left to live.
 
-![image](./assets/age.png)
+![image](../../ch10-effects/assets//age.png)
 
 ## Attractor
 
@@ -31,7 +31,7 @@ The attractor attracts particles towards a specific point. The point is specifie
 
 It’s easy to see that the upper half of the particles are affected by the attracted to the top. The attraction point is set to top-left (0/0 point) of the attractor with a force of 1.0.
 
-![image](./assets/attractor.png)
+![image](../../ch10-effects/assets//attractor.png)
 
 ## Friction
 
@@ -41,7 +41,7 @@ The friction affector slows down particles by a factor until a certain threshold
 
 In the upper friction area, the particles are slowed down by a factor of 0.8 until the particle reaches 25 pixels per seconds velocity. The threshold act’s like a filter. Particles traveling above the threshold velocity are slowed down by the given factor.
 
-![image](./assets/friction.png)
+![image](../../ch10-effects/assets//friction.png)
 
 ## Gravity
 
@@ -51,7 +51,7 @@ The gravity affector applies an acceleration In the example we stream the partic
 
 Particles on the left side try to climb up, but the steady applied acceleration towards the bottom drags them into the direction of the gravity.
 
-![image](./assets/gravity.png)
+![image](../../ch10-effects/assets//gravity.png)
 
 ## Turbulence
 
@@ -61,7 +61,7 @@ The turbulence affector applies a *chaos* map of force vectors to the particles.
 
 In the upper area of the example, particles are influenced by the turbulence. Their movement is more erratic. The amount of erratic deviation from the original path is defined by the strength.
 
-![image](./assets/turbulence.png)
+![image](../../ch10-effects/assets//turbulence.png)
 
 ## Wander
 
@@ -71,4 +71,4 @@ The wander manipulates the trajectory. With the property *affectedParameter* can
 
 In the top wander affector particles are shuffled around by random trajectory changes. In this case, the position is changed 200 times per second in the y-direction.
 
-![image](./assets/wander.png)
+![image](../../ch10-effects/assets//wander.png)

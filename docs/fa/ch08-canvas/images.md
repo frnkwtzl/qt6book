@@ -6,4 +6,4 @@ The QML canvas supports image drawing from several sources. To use an image insi
 
 The left shows our ball image painted at the top-left position of 10x10. The right image shows the ball with a clipping path applied. Images and any other path can be clipped using another path. The clipping is applied by defining a path and calling the `clip()` function. All following drawing operations will now be clipped by this path. The clipping is disabled again by restoring the previous state or by setting the clip region to the whole canvas.
 
-![image](./assets/canvas_image.png)
+![image](../../ch08-canvas/assets//canvas_image.png)

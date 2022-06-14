@@ -4,7 +4,7 @@ The vertex shader can be used to manipulate the vertexes provided by the shader 
 
 
 
-![image](./assets/genieeffect.png)
+![image](../../ch10-effects/assets//genieeffect.png)
 
 ## Setting up the scene
 
@@ -14,7 +14,7 @@ First, we will set up our scene with an image and a shader effect.
 
 This provides a scene with a dark background and a shader effect using an image as the source texture. The original image is not visible on the image produced by our genie effect. Additional we added a dark rectangle on the same geometry as the shader effect so we can better detect where we need to click to revert the effect.
 
-![image](./assets/geniescene.png)
+![image](../../ch10-effects/assets//geniescene.png)
 
 The effect is triggered by clicking on the image, this is defined by the mouse area covering the effect. In the *onClicked* handler we toggle the custom boolean property *minimized*. We will use this property later to toggle the effect.
 
@@ -38,7 +38,7 @@ pos.x = mix(qt_Vertex.x, ubuf.width, ubuf.minimize);
 
 The `mix(…)` function provides a linear interpolation between the first 2 parameters on the point (0.0-1.0) provided by the 3rd parameter. So in our case, we interpolate for y between the current y position and the height based on the current minimized value, similar for x. Bear in mind the minimized value is animated by our sequential animation and travels from 0.0 to 1.0 (or vice versa).
 
-![image](./assets/genieminimize.png)
+![image](../../ch10-effects/assets//genieminimize.png)
 
 The resulting effect is not really the genie effect but is already a great step towards it.
 
@@ -53,7 +53,7 @@ pos.x = mix(qt_Vertex.x, ubuf.width, t * minimize);
 
 This results in an x-position tending towards the width when the y-position is larger. In other words, the upper 2 vertexes are not affected at all as they have a y-position of 0 and the lower two vertexes x-positions both bend towards the width, so they bend towards the same x-position.
 
-![image](./assets/geniebending.png)
+![image](../../ch10-effects/assets//geniebending.png)
 
 ## Better Bending
 
@@ -70,7 +70,7 @@ We then add `bend` to the uniform buffer, `ubuf` and use it in the shader to ach
 
 The curve starts smooth at the 0.0 value, grows then and stops smoothly towards the 1.0 value. Here is a plot of the function in the specified range. For us, only the range from 0..1 is from interest.
 
-![image](./assets/curve.png)
+![image](../../ch10-effects/assets//curve.png)
 
 We also need to increase the number of vertex points. The vertex points used can be increased by using a mesh.
 
@@ -80,7 +80,7 @@ mesh: GridMesh { resolution: Qt.size(16, 16) }
 
 The shader effect now has an equality distributed grid of 16x16 vertexes instead of the 2x2 vertexes used before. This makes the interpolation between the vertexes look much smoother.
 
-![image](./assets/geniesmoothbending.png)
+![image](../../ch10-effects/assets//geniesmoothbending.png)
 
 You can see also the influence of the curve being used, as the bending smoothes at the end nicely. This is where the bending has the strongest effect.
 
@@ -98,7 +98,7 @@ ShaderEffect {
 
 <<< @/docs/ch10-effects/src/effects/genie/4/genie4.vert#M1
 
-![image](./assets/geniehalfside.png)
+![image](../../ch10-effects/assets//geniehalfside.png)
 
 ## Packaging
 

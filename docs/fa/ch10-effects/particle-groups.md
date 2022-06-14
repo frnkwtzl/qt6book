@@ -2,7 +2,7 @@
 
 At the beginning of this chapter, we stated particles are in groups, which is by default the empty group (‘’). Using the `GroupGoal` affector is it possible to let the particle change groups. To visualize this we would like to create a small firework, where rockets start into space and explode in the air into a spectacular firework.
 
-![image](./assets/firework_teaser.png)
+![image](../../ch10-effects/assets//firework_teaser.png)
 
 The example is divided into 2 parts. The 1st part called “Launch Time” is concerned to set up the scene and introduce particle groups and the 2nd part called “Let there be fireworks” focuses on the group changes.
 
@@ -130,7 +130,7 @@ Also, the turbulence needs to declare which groups it shall affect. The turbulen
 
 When you start the example now you will see the rockets are climbing up and then will be slowed down by the friction and fall back to the ground by the still applied downwards acceleration. The next thing would be to start the firework.
 
-![image](./assets/firework_rockets.png)
+![image](../../ch10-effects/assets//firework_rockets.png)
 
 ::: tip
 The image shows the scene with the tracers enabled to show the different areas. Rocket particles are emitted in the red area and then affected by the turbulence in the blue area. Finally, they are slowed down by the friction affector in the green area and start falling again, because of the steady applied downwards acceleration.
@@ -224,7 +224,7 @@ Here is the final result.
 
 
 
-![image](./assets/firework_final.png)
+![image](../../ch10-effects/assets//firework_final.png)
 
 Here is the full source code of the rocket firework.
 

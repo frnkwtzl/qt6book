@@ -47,11 +47,11 @@ Item {
 }
 ```
 
-![](./assets/trafficlight_sketch.png)
+![](../../ch05-fluid/assets//trafficlight_sketch.png)
 
 For example, a traffic light might have two signaling lights. The upper one signaling stop with a red color and the lower one signaling go with a green color. In this example, both lights should not shine at the same time. Let’s have a look at the state chart diagram.
 
-![](./assets/trafficlight_states.png)
+![](../../ch05-fluid/assets//trafficlight_states.png)
 
 When the system is switched on, it automatically goes into the stop mode as the default state. The stop state changes `light1` to red and `light2` to black (off). 
 
@@ -75,7 +75,7 @@ A state change is triggered using a mouse area which covers the whole traffic li
 
 <<< @/docs/ch05-fluid/src/animation/StatesExample.qml#interaction
 
-![](./assets/trafficlight_ui.png)
+![](../../ch05-fluid/assets//trafficlight_ui.png)
 
 We are now able to successfully change the state of the traffic lamp. To make the UI more appealing and natural, we should add some transitions with animation effects. A transition can be triggered by a state change.
 
@@ -100,7 +100,7 @@ We restrict the transition with the `from` and `to` properties to filter only th
 
 You can change the state though clicking the UI. The state is applied immediately and will also change the state while a transition is running. So, try to click the UI while the state is in the transition from “stop” to “go”. You will see the change will happen immediately.
 
-![](./assets/trafficlight_transition.png)
+![](../../ch05-fluid/assets//trafficlight_transition.png)
 
 You could play around with this UI by, for example, scaling the inactive light down to highlight the active light. 
 

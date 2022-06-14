@@ -6,5 +6,5 @@ In QML, the model and view are joined by the delegate. The responsibilities are 
 
 This means that the delegate knows about the contents of the model and how to visualize it. The view knows about the concept of delegates and how to lay them out. The model only knows about the data it is representing.
 
-![](./assets/model-view-delegate.png)
+![](../../ch07-modelview/assets//model-view-delegate.png)
 

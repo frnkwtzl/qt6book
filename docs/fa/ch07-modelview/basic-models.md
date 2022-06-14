@@ -10,7 +10,7 @@ In the example below, a repeater is used to create 10 instances of an item. The 
 
 <<< @/docs/ch07-modelview/src/repeater/number.qml#global
 
-![image](./assets/automatic/repeater-number.png)
+![image](../../ch07-modelview/assets//automatic/repeater-number.png)
 
 ## Using an array
 
@@ -18,7 +18,7 @@ As nice as lists of numbered items are, it is sometimes interesting to display a
 
 <<< @/docs/ch07-modelview/src/repeater/array.qml#global
 
-![image](./assets/automatic/repeater-array.png)
+![image](../../ch07-modelview/assets//automatic/repeater-array.png)
 
 ## Using a `ListModel`
 
@@ -28,7 +28,7 @@ The properties bound inside each element are attached to each instantiated item 
 
 <<< @/docs/ch07-modelview/src/repeater/model.qml#global
 
-![image](./assets/automatic/repeater-model.png)
+![image](../../ch07-modelview/assets//automatic/repeater-model.png)
 
 ## Using a delegate as default property
 

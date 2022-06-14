@@ -30,11 +30,11 @@ Window {
 
 The `HelloWorld.qml` program is written in the QML language. We’ll discuss the QML language more in-depth in the next chapter. QML describes the user interface as a tree of hierarchical elements. In this case, a window of 640 x 480 pixels, with a window title “Hello World”.
 
-To run the application on your own, press the ![](./assets/qtcreator-run.png) Run tool on the left side, or select Build > Run from the menu.
+To run the application on your own, press the ![](../../ch02-start/assets//qtcreator-run.png) Run tool on the left side, or select Build > Run from the menu.
 
 In the background, Qt Creator runs `qml` and passes your QML document as the first argument. The `qml` application parses the document, and launches the user interface. You should see something like this:
 
-![](./assets/example.png)
+![](../../ch02-start/assets//example.png)
 
 Qt 6 works! That means we’re ready to continue.
 

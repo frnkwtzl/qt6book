@@ -8,9 +8,9 @@ For example, let’s create a rectangle containing a text component and a mouse 
 
 The UI will look similar to this. In the first image, the UI is in its initial state, and in the second image the button has been clicked.
 
-![](./assets/button_waiting.png)
+![](../../ch04-qmlstart/assets//button_waiting.png)
 
-![](./assets/button_clicked.png)
+![](../../ch04-qmlstart/assets//button_clicked.png)
 
 
 Now our task is to extract the button UI into a reusable component. For this, we should think about a possible API for our button. You can do this by imagining how someone else should use your button. Here’s what I came up with:

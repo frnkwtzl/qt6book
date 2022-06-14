@@ -26,6 +26,6 @@ vec2 coord = qt_TexCoord0 + ubuf.amplitude * vec2(pulse.x, -pulse.x);
 
 The texture coordinate is influenced by our pulse x-value. The result of this is a moving wave.
 
-![image](./assets/wave.png)
+![image](../../ch10-effects/assets//wave.png)
 
 In this example we use a fragment shader, meaning that we move the pixels inside the texture of the rectangular item. If we wanted the entire item to move as a wave we would have to use a vertex shader.
