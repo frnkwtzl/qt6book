@@ -25,11 +25,11 @@ This application's goal is to retrieve the top ten favourite artists of the auth
 
 First, you will need to create a dedicated app on the [Spotify Developer's portal](https://developer.spotify.com/dashboard/applications). 
 
-![image](./images/oauth-spotify-dashboard.png)
+![image](../../ch13-networking/images/oauth-spotify-dashboard.png)
 
 Once your app is created, you'll receive two keys: a `client id` and a `client secret`. 
 
-![image](./images/oauth-spotify-app.png)
+![image](../../ch13-networking/images/oauth-spotify-app.png)
 
 ### The QML file
 
@@ -497,6 +497,6 @@ The `data()` method extracts, depending on the requested model role, the relevan
     }
 ```
 
-![image](./images/oauth-spotify-result.png)
+![image](../../ch13-networking/images/oauth-spotify-result.png)
 
 

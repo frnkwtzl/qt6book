@@ -2,7 +2,7 @@
 
 Now we can use our newly created file to access some data. In this example, we will some city data in a JSON format and display it in a table. We build this as two projects: one for the extension plugin (called `fileio`) which provides us a way to read and write text from a file, and the other, which displays the data in a table, (`CityUI`). The `CityUI` uses the `fileio`extension for reading and writing files. 
 
-![image](./images/cityui_mock.png)
+![image](../../ch18-extensions/images/cityui_mock.png)
 
 JSON data is just text that is formatted in such a way that it can be converted into a valid JS object/array and back to text. We use our `FileIO` to read the JSON formatted data and convert it into a JS object using the built-in Javascript function `JSON.parse()`. The data is later used as a model for the table view. This is implemented in the read document and write document functions shown below. 
 
@@ -86,7 +86,7 @@ Now the application should show you a menubar with a file menu and an empty tabl
 
 
 
-![image](./images/cityui_empty.png)
+![image](../../ch18-extensions/images/cityui_empty.png)
 
 The `cities.json` document is an array of city entries. Here is an example.
 
@@ -167,7 +167,7 @@ This is basically the application with reading, writing and displaying a JSON do
 
 
 
-![image](./images/cityui_table.png)
+![image](../../ch18-extensions/images/cityui_table.png)
 
 ## Finishing Touch
 
@@ -211,5 +211,5 @@ For the data removal operation, we get a hold on the view model and then remove 
 
 A JS array is unfortunately not so smart as a Qt model like the `QAbstractItemModel`, which will notify the view about row changes or data changes. The view will not show any updated data by now as it is never notified of any changes. Only when we set the data back to the view, the view recognizes there is new data and refreshes the view content. Setting the model again using `view.model = data` is a way to let the view know there was a data change.
 
-![image](./images/cityui_populated.png)
+![image](../../ch18-extensions/images/cityui_populated.png)
 

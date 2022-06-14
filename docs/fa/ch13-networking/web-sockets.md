@@ -20,7 +20,7 @@ You can easily create your own WS server using the C++ part of the Qt WebSocket 
 
 The code shall create a simple echo server in NodeJS to echo our messages back to our QML client.
 
-![image](./images/ws_client.png)
+![image](../../ch13-networking/images/ws_client.png)
 
 ```sh
 cd ws_server
@@ -76,5 +76,5 @@ When entering text and pressing enter you should see something like this.
 
 
 
-![image](./images/ws_client.png)
+![image](../../ch13-networking/images/ws_client.png)
 

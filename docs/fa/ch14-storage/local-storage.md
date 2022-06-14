@@ -14,7 +14,7 @@ For example, to read from a simple notes table with a text column you could use 
 
 As an example assume we would like to store the position of a rectangle on our scene.
 
-![image](./images/crazy_rect.png)
+![image](../../ch14-storage/images/crazy_rect.png)
 
 Here is the base of the example. It contains a rectangle called `crazy` that is draggable and shows its current `x` and `y` position as text.
 

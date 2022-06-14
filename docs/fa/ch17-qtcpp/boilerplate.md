@@ -153,7 +153,7 @@ int main(int argc, char** argv)
 
 Using Qt, you can build user interfaces in both QML and Widgets. In this book we focus on QML, but in this chapter, we will look at Widgets. This lets us create the program only C++. 
 
-![image](./images/storecontent.png)
+![image](../../ch17-qtcpp/images/storecontent.png)
 
 The main window itself is a widget. It becomes a top-level window as it does not have any parent. This comes from how Qt sees a user interface as a tree of UI elements. In this case, the main window is the root element, thus becomes a window, while the push button, that is a child of the main window, becomes a widget inside the window.
 
