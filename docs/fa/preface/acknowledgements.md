@@ -1,6 +1,6 @@
-# Acknowledgements
+# سپاسگزاری‌ها
 
-This book would not have been possible to create without the kind sponsorship from **The Qt Company**. It is a privilege to be able to work on a project such as this, and their help has been invaluable. I would like to give a special mention to (alphabetically):
+خلق این کتاب بدون حمایت خوب **شرکت Qt** ممکن نبود. این یک افتخار است که بتوانم روی پروژه ای مانند این کار کنم و کمک آنها بسیار ارزشمند بوده است. من می خواهم به (به ترتیب حروف الفبا) اشاره ویژه ای داشته باشم از:
 
 - empenzes 
 - Fabian K
@@ -13,9 +13,9 @@ This book would not have been possible to create without the kind sponsorship fr
 - Ulf Hermann
 - Vladimir Minenko
 
-## Contributors
+## مشارکت کنندگان
 
-This book was made possible by the great community contributors. I would like to thank them all (alphabetically):
+این کتاب توسط مشارکت کنندگان بزرگ جامعه امکان پذیر شد. من می خواهم از همه آنها (به ترتیب حروف الفبا) تشکر کنم:
 
 - alexshen
 - arky
@@ -33,9 +33,9 @@ This book was made possible by the great community contributors. I would like to
 - VideoCarp
 - wangchunlin5013
 
-## History
+## تاریخچه
 
-This book is based on [The QML Book](https://qmlbook.github.io/), originally written for Qt 5. I would like to thank all contributors to that book (alphabetically):
+این کتاب بر اساس [The QML Book] (https://qmlbook.github.io/)، که در اصل برای Qt 5 نوشته شده‌بود، است. می‌خواهم از همه مشارکت‌کنندگان آن کتاب (بر اساس حروف الفبا) تشکر کنم:
 
 - aamirglb
 - alexeRadu
@@ -69,4 +69,4 @@ This book is based on [The QML Book](https://qmlbook.github.io/), originally wri
 - trolley
 - 29jm
 
-I would also like to give a special mention to Pelagicore, The Qt Company and Felgo for help the development of The QML Book by sponsoring our work and being generally awesome when it comes to feedback and support.
+همچنین می‌خواهم به شرکت Pelagicore، Qt و Felgo برای کمک به توسعه کتاب QML با حمایت مالی از کارما و به طور کلی عالی بودن در مورد بازخورد و پشتیبانی اشاره کنم.
