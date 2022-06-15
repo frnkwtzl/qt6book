@@ -1,36 +1,36 @@
 # Qt and Qt Quick
 
-This book provides you with a walk through of the different aspects of application development using the new Qt 6. It focuses on the Qt Quick technology, but also provides necessary information about writing C++ back-ends and extensions for Qt Quick.
+این کتاب با استفاده از Qt 6 جدید، جنبه‌های مختلف توسعه برنامه‌های کاربردی را در اختیار شما قرار می‌دهد. این کتاب بر روی فناوری Qt Quick تمرکز دارد، اما همچنین اطلاعات لازم در مورد نوشتن بک‌اندهای ++C و Extensionهایی برای Qt Quick را ارائه می‌کند.
 
-This chapter shall provide a high-level overview of Qt 6. It shows the different application models available for developers, as well as a showcase application, as a sneak preview of things to come. Additionally, the chapter aims to provide a wide overview of the Qt content and how to get in touch with the makers of Qt the Qt Company.
+این فصل باید یک نمای کلی در سطح بالا از Qt 6 ارائه کند. مدل های مختلف برنامه های موجود برای توسعه دهندگان و همچنین یک برنامه نمایشی را به عنوان پیش نمایش مخفیانه از چیزهای آینده نشان می دهد. علاوه بر این، هدف این فصل ارائه یک نمای کلی از محتوای Qt و نحوه ارتباط با سازندگان شرکت Qt است.
 
 
-## Qt 6 Focus
+## تمرکز Qt 6
 
-Qt 5 was released many years ago and introduced a new declarative way of writing stunning user interfaces. Since then a lot has changed in the world around us.
+Qt5 سال ها پیش منتشر شد و روشی جدید برای نوشتن رابط های کاربری خیره کننده معرفی کرد. از آن زمان تاکنون چیزهای زیادی در دنیای اطراف ما تغییر کرده است.
 
-Qt 6 will be a continuation of what has been done with Qt 5 and should not be disruptive to the majority of users. What makes Qt valuable to its users?
+Qt6 ادامه کاری است که با Qt5 انجام شده است و نباید برای اکثر کاربران اختلال ایجاد کند. چه چیزی Qt را برای کاربرانش ارزشمند می کند؟
 
-* Its cross-platform nature
-* Its scalability
-* World class APIs and documentation
-* Maintainability, stability and compatibility
-* A large developer ecosystem
+* ماهیت کراس پلتفرمی آن
+* مقیاس پذیری آن
+* APIهای کلاس جهانی و اسناد آن‌ها
+* قابلیت نگهداری، پایداری و سازگاری
+* اکوسیستمی بزرگ برای توسعه دهنده‌گان
 
-Qt 6 evolves the Qt product to new markets while keeping close to the users values.
+Qt 6 محصول Qt را به بازارهای جدید تکامل می دهد و در عین حال نزدیک به ارزش های کاربران است.
 
-The desktop market is the root of the Qt offering. It is where most users get the first contact with Qt and it forms the base for the Qt tools and its success.
+بازار دسکتاپ ریشه ارائه Qt است. اینجا جایی است که اکثر کاربران اولین تماس با Qt را دارند و پایه ابزارهای Qt و موفقیت آن را تشکیل می دهد.
 
-It is expected that Qt 6 will grow most in the embedded and connected devices market from high-end near desktop performing devices to low-end devices like microcontrollers. Touch screens will come to an exponential increasing number to these devices. Many of these devices will have relatively simple functionality but require a polished and smooth user interface.
+انتظار می‌رود که Qt 6 در بازار دستگاه‌های تعبیه‌شده و متصل از دستگاه‌های گران‌قیمت نزدیک به دسکتاپ تا دستگاه‌های پایین‌رده مانند میکروکنترلرها بیشترین رشد را داشته باشد. تعداد صفحه نمایش های لمسی به طور تصاعدی در این دستگاه ها افزایش می یابد. بسیاری از این دستگاه‌ها عملکرد نسبتاً ساده‌ای دارند، اما به یک رابط کاربری صاف و صیقلی نیاز دارند.
 
-At the other end of the spectrum there is a demand for more complex and 2D/3D integrated user interfaces. The 3D content with 2D elements based interfaces will be common, as will be the use of augmented and virtual reality.
+در انتهای دیگر طیف تقاضا برای رابط های کاربری پیچیده تر و 2 بعدی/3 بعدی یکپارچه تر وجود دارد. محتوای سه بعدی با رابط های مبتنی بر عناصر دو بعدی، و همچنین استفاده از واقعیت افزوده و مجازی رایج خواهد بود.
 
-The growth of connected devices and the higher demand for smooth user interfaces require a simpler workflow to create applications and devices. Integrating UX designers into the development workflow is one of the goals of the Qt 6 series.
+رشد دستگاه‌های متصل و تقاضای بیشتر برای رابط‌های کاربری روان نیاز به گردش کار ساده‌تری برای ایجاد برنامه‌ها و دستگاه‌ها دارد. ادغام طراحان UX در گردش کار توسعه یکی از اهداف سری Qt 6 است.
 
-## Qt 6 brings us:
+## Qt 6 برای ما به ارمغان می آورد:
 
-* Next generation QML
-* Next generation graphics
-* Unified and consistent tooling
-* Enhanced Qts C++ APIs
-* Component Marketplace
+* نسل بعدی QML
+* گرافیک نسل بعدی
+* ابزار یکپارچه و منسجم
+* APIهای پیشرفته برای ++Qt C
+* بازار کامپوننت
