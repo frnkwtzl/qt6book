@@ -32,15 +32,15 @@ Qt classes come with a number of features that we want to be able to use. These 
 
 ### Signals and Slots
 
-We start with the class `NumberGenerator`. It has a constructor, a method called `updateNumber` and a signal called `nextNumber`. The idea is that when you call `updateNumber`, the signal `nextNumber` is emitted with a new random number. You can see the code for the class below, but first we will look at the details.
+We start with the class `NumberGenerator`. It has a constructor, a method called `giveNumber` and a signal called `nextNumber`. The idea is that when you call `giveNumber`, the signal `nextNumber` is emitted with a new random number. You can see the code for the class below, but first we will look at the details.
 
 First of all we make sure to call `QObject.__init__` from our constructor. This is very important, as the example will not work without it.
 
 Then we declare a signal by creating an instance of the `Signal` class from the `PySide6.QtCore` module. In this case, the signal carries an integer value, hence the `int`. The signal parameter name, `number`, is defined in the `arguments` parameter.
 
-Finally, we *decorate* the `updateNumber` method with the `@Slot()` decorator, thus turning it into a slot. There is no concept of *invokables* in Qt for Python, so all callable methods must be slots.
+Finally, we *decorate* the `giveNumber` method with the `@Slot()` decorator, thus turning it into a slot. There is no concept of *invokables* in Qt for Python, so all callable methods must be slots.
 
-In the `updateNumber` method we emit the `nextNumber` signal using the `emit` method. This is a bit different than the syntax for doing so from QML or C++ as the signal is represented by an object instead of being a callable function.
+In the `giveNumber` method we emit the `nextNumber` signal using the `emit` method. This is a bit different than the syntax for doing so from QML or C++ as the signal is represented by an object instead of being a callable function.
 
 <<< @/docs/ch19-python/src/class-context-property/class.py#number-generator
 
@@ -50,7 +50,7 @@ The interesting lines are the one where we first instantiate a `NumberGenerator`
 
 <<< @/docs/ch19-python/src/class-context-property/class.py#main
 
-Continuing to the QML code, we can see that we’ve created a Qt Quick Controls 2 user interface consisting of a `Button` and a `Label`. In the button’s `onClicked` handler, the `numberGenerator.updateNumber()` function is called. This is the slot of the object instantiated on the Python side.
+Continuing to the QML code, we can see that we’ve created a Qt Quick Controls 2 user interface consisting of a `Button` and a `Label`. In the button’s `onClicked` handler, the `numberGenerator.giveNumber()` function is called. This is the slot of the object instantiated on the Python side.
 
 To receive a signal from an object that has been instantiated outside of QML we need to use a `Connections` element. This allows us to attach a signal handler to an existing target.
 
@@ -96,7 +96,7 @@ class NumberGenerator(QObject):
         return self.__number
 ```
 
-In order to define properties, we need to import the concepts of `Signal`, `Slot`, and `Property` from `PySide2.QtCore`. In the full example, there are more imports, but these are the ones relevant to the properties.
+In order to define properties, we need to import the concepts of `Signal`, `Slot`, and `Property` from `PySide6.QtCore`. In the full example, there are more imports, but these are the ones relevant to the properties.
 
 ```py
 from PySide6.QtCore import QObject, Signal, Slot, Property
@@ -188,7 +188,7 @@ In QML, we can bind to the `number` as well as the `maxNumber` properties of the
 
 Up until now, we’ve instantiated an object Python and used the `setContextProperty` method of the `rootContext` to make it available to QML. Being able to instantiate the object from QML allows better control over object life-cycles from QML. To enable this, we need to expose the *class*, instead of the *object*, to QML.
 
-The class that is being exposed to QML is not affected by where it is instantiated. No change is needed to the class definition. However, instead of calling `setContextProperty`, the `qmlRegisterType` function is used. This function comes from the `PySide2.QtQml` module and takes five arguments:
+The class that is being exposed to QML is not affected by where it is instantiated. No change is needed to the class definition. However, instead of calling `setContextProperty`, the `qmlRegisterType` function is used. This function comes from the `PySide6.QtQml` module and takes five arguments:
 
 
 * A reference to the class, `NumberGenerator` in the example below.
