@@ -135,7 +135,7 @@ Now, whenever the wheel’s rotation property changes, it will be animated using
 ![](./assets/scene2.png)
 
 ::: tip
-You will not actually see the wheel blurred. This is just to indicate the rotation. (A blurred wheel is in the assets folder, in case you’d like to experiment with it.)
+You will not actually see the wheel blurred. This is just to indicate the rotation. (A blurred wheel is in the [assets folder]([url](https://github.com/Mr17MG/qt6book/tree/main/docs/ch01-meetqt/assets)), in case you’d like to experiment with it.)
 :::
 
 Now the wheel looks much better and behaves nicely, as well as providing a very brief insight into the basics of how Qt Quick programming works.
